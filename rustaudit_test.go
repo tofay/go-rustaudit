@@ -34,7 +34,7 @@ func TestWasmRustDependencies(t *testing.T) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	assert.Equal(t, 18, len(versionInfo.Packages))
+	assert.Equal(t, 19, len(versionInfo.Packages))
 	assert.Equal(t, Package{Name: "bumpalo", Version: "3.16.0", Source: "crates.io", Kind: "runtime", Dependencies: nil, Root: false}, versionInfo.Packages[0])
 	assert.Equal(t, false, versionInfo.Packages[1].Root)
 }
