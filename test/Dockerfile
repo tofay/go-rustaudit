@@ -1,4 +1,4 @@
-FROM rust:1.79.0-bullseye as builder
+FROM rust:1-bullseye as builder
 RUN git clone https://github.com/rust-secure-code/cargo-auditable.git
 WORKDIR /cargo-auditable/cargo-auditable
 RUN cargo build
