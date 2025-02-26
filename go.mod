@@ -1,4 +1,4 @@
-module github.com/microsoft/go-rustaudit
+module github.com/rust-secure-code/go-rustaudit
 
 go 1.18
 
